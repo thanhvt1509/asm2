@@ -1,0 +1,28 @@
+.<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Tên sản phẩm</th>
+                <th scope="col">Giá sản phẩm</th>
+                <th scope="col">Mô tả</th>
+                <th>
+                    <a routerLink="/product/create" class="btn btn-success">Thêm sản phẩm mới</a>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of products">
+                <th scope="row">{{product.id}}</th>
+                <td>{{product.name}}</td>
+                <td>{{product.price}}</td>
+                <td>{{product.desc}}</td>
+                <td>
+                    <a routerLink="/product/detail/{{product.id}}" class="btn btn-primary">Xem chi tiết </a>
+                    <a class="btn btn-danger" (click)="removeProduct(product.id)">Xóa </a>
+                    <a routerLink="/product/update/{{product.id}}" class="btn btn-success">Sửa </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

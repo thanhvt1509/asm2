@@ -1,0 +1,20 @@
+<div class="container">
+    <form [formGroup]="productForm" (ngSubmit)="createProduct()">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Tên sản phẩm</label>
+            <input type="text" formControlName="name" class="form-control" id="exampleInputEmail1"
+                aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Giá sản phẩm</label>
+            <input type="number" formControlName="price" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Mô tả sản phẩm</label>
+            <input type="text" formControlName="desc" class="form-control" id="exampleInputEmail1"
+                aria-describedby="emailHelp">
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="!productForm.valid">Submit</button>
+        <a routerLink="/product" class="btn btn-success">Back to home</a>
+    </form>
+</div>

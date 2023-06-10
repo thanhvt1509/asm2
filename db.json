@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "id": "ypsL7ne",
+      "name": "Product A",
+      "price": 200,
+      "desc": "mo ta san pham A"
+    },
+    {
+      "id": "JnaYvG6",
+      "name": "Product B",
+      "price": 300,
+      "desc": "mo ta san pham B"
+    },
+    {
+      "id": "Nk-nIMQ",
+      "name": "Product C update",
+      "price": 400,
+      "desc": "mo ta san pham C"
+    },
+    {
+      "id": "KaPJTHa",
+      "name": "aaaaaaaaaaaaaaa",
+      "price": 10,
+      "desc": "iPhone 13 Pro Max"
+    },
+    {
+      "id": "MY-4mfy",
+      "name": "iPhone 13 Pro Max",
+      "price": 10,
+      "desc": "aaaaaaaaaaaaaaa"
+    }
+  ]
+}
